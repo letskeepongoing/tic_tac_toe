@@ -2,8 +2,9 @@ class HumanPlayer
 
     attr_reader :mark_value
 
-    def initialize(mark_value)
+    def initialize(mark_value,name)
         @mark_value = mark_value
+        @name = name
     end
 
     def get_position(legal_positions)
