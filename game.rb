@@ -25,10 +25,6 @@ class Game
         @current_player = @players[(current_index +1) % @players.length]
     end
 
-    def swap
-        @current_player = @players[0]
-    end
-
     def play
         while @board.empty_positions
             @board.print
